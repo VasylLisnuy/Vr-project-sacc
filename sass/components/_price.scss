@@ -1,0 +1,144 @@
+.price {
+  padding-top: 112px;
+
+  background: var(--section-background-color, #1f0243);
+
+
+}
+
+.price-title {
+  align-self: stretch;
+
+  margin-bottom: 24px;
+  color: var(--text-color, #fff);
+  text-align: center;
+
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.54px;
+}
+
+.price-text {
+  align-self: stretch;
+  color: var(--text-color, #fff);
+  text-align: center;
+  padding-bottom: 80px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.price-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-item {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: var(--Stroke-Border-Width, 1px) solid var(--Color-Scheme-1-Border, rgba(255, 255, 255, 0.2));
+  background: var(--Color-Scheme-1-Foreground, #2a0359);
+}
+
+.price-subtitle-h4 {
+  align-self: stretch;
+  color: var(--text-color, #fff);
+  text-align: center;
+  padding-bottom: 8px;
+
+  font-size: var(--Text-Sizes-Heading-6, 26px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.26px;
+}
+
+.price-subtitle-h3 {
+  align-self: stretch;
+  color: var(--text-color, #fff);
+  text-align: center;
+  padding-bottom: 32px;
+
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.64px;
+}
+
+.price-item-text {
+  color: var(--text-color, #fff);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.price-button {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--text-color, #ffffff);
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 12px;
+  border-top: 1.5px solid var(--button-violet-Dark, #5406b3);
+  border-right: 1.5px solid var(--button-violet-Dark, #5406b3);
+  border-bottom: 4px solid var(--button-violet-Dark, #5406b3);
+  border-left: 1.5px solid var(--button-violet-Dark, #5406b3);
+  background: var(--button-Violet, #6a08e0);
+  transition-property: background-color transform;
+  transition-duration: 250ms;
+}
+
+.price-button:hover {
+  background-color: #5406b3;
+  transform: scale(1.1) translate(0px, -4px);
+  
+}
+
+.price-check {
+  width: 24px;
+  height: 24px;
+}
+
+.price-all-text {
+  display: flex;
+  padding: 8px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+
+.text-and-check {
+  display: flex;
+  gap: 16px;
+}
