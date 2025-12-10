@@ -5,7 +5,7 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: var(--section-background-color, #1f0243);
+  background: $section-background-color, #1f0243;
   background-image: url(./photo/s.webp);
   background-repeat: no-repeat;
   background-position: right;
@@ -13,7 +13,7 @@
 
 .info-title {
   align-self: stretch;
-  color: var(--text-color, #fff);
+  color: $text-color, #fff;
   text-align: center;
 
   padding-bottom: 16px;
@@ -28,7 +28,7 @@
 .info-text {
   margin-bottom: 80px;
 
-  color: var(--text-color, #fff);
+  color: $text-color, #fff;
   text-align: center;
 
   font-family: "Open Sans";
@@ -60,8 +60,8 @@
   flex: 1 0 0;
   overflow: hidden;
   border-radius: 8px;
-  border: var(--Stroke-Border-Width, 1px) solid var(--Color-Scheme-1-Border, rgba(255, 255, 255, 0.2));
-  background: var(--Color-Scheme-1-Foreground, #2a0359);
+  border: $Stroke-Border-Width, 1px solid $Color-Scheme-1-Border, rgba(255, 255, 255, 0.2);
+  background: $Color-Scheme-1-Foreground, #2a0359;
 }
 
 
@@ -109,10 +109,10 @@ transition-property: opacity;
 
 .info-subtitle {
   align-self: stretch;
-  color: var(--text-color, #fff);
+  color: $text-color, #fff;
   text-align: center;
 
-  font-size: var(--Text-Sizes-Heading-5, 32px);
+  font-size: $Text-Sizes-Heading-5, 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
@@ -121,7 +121,7 @@ transition-property: opacity;
 
 .info-item-text {
   align-self: stretch;
-  color: var(--text-color, #fff);
+  color: $text-color, #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;

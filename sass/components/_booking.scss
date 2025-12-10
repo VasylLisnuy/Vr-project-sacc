@@ -5,7 +5,7 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: var(--section-background-color, #1f0243);
+  background: $section-background-color, #1f0243;
 
 
 }
@@ -98,7 +98,7 @@
 
 .email {
   align-self: stretch;
-  color: var(--text-color, #fff);
+  color: $text-color, #fff;
 
   font-family: "Open Sans";
   font-size: 18px;
@@ -129,7 +129,7 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 16px;
-  background: var(--section-background-color, #1f0243);
+  background: $section-background-color, #1f0243;
 }
 
 .radio-list {
@@ -157,12 +157,12 @@
   align-items: center;
   gap: 8px;
   border-radius: 12px;
-  border-top: 1.5px solid var(--button-violet-Dark, #5406b3);
-  border-right: 1.5px solid var(--button-violet-Dark, #5406b3);
-  border-bottom: 4px solid var(--button-violet-Dark, #5406b3);
-  border-left: 1.5px solid var(--button-violet-Dark, #5406b3);
-  background: var(--button-Violet, #6a08e0);
-  color: var(--text-color, #ffffff);
+  border-top: 1.5px solid $button-violet-Dark, #5406b3;
+  border-right: 1.5px solid $button-violet-Dark, #5406b3;
+  border-bottom: 4px solid $button-violet-Dark, #5406b3;
+  border-left: 1.5px solid $button-violet-Dark, #5406b3;
+  background: $button-Violet, #6a08e0;
+  color: $text-color, #ffffff;
 
   font-family: "Open Sans";
   font-size: 18px;
