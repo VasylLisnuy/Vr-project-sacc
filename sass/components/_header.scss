@@ -10,50 +10,75 @@
   align-items: center;
   align-self: stretch;
   background: $section-background-color, #1f0243;
-}
 
-.header-info {
-  display: flex;
-}
+  &__info {
+    display: flex;
+  }
 
-.header-div {
-  display: flex;
-}
+  &__list {
+    color: $text-color, #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: auto;
+  }
 
-.logo-header {
-  display: flex;
-  width: 84px;
-  height: 36px;
-  padding: 6.844px 0 5.695px 0;
-  justify-content: center;
-  align-items: center;
-}
+  &__item {
+    position: relative;
 
-.header-list {
-  color: $text-color, #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-right: auto;
-}
+    &:hover .bottom-menu {
+      opacity: 1;
+    }
 
-.navigation {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: $color-scheme-1-text;
-  transition-property: color;
-  transition-duration: 250ms;
+    &:hover::after {
+
+      opacity: 1;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 1;
+      background-color: #6a08e0;
+      transition-property: opacity;
+      transition-duration: 250ms;
+      opacity: 0;
+    }
+
+  }
+
+  &__logo {
+    display: flex;
+    width: 84px;
+    height: 36px;
+    padding: 6.844px 0 5.695px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__page {
+
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-scheme-1-text;
+    transition-property: color;
+    transition-duration: 250ms;
 
 
-}
+    &:hover {
+      color: #6a08e0;
+    }
 
-.navigation:hover {
-  color: #6a08e0;
-}
+  }
 
-.header-button {
+  &__button {
   display: flex;
   padding: 8px 20px;
   justify-content: right;
@@ -74,30 +99,17 @@
   line-height: 150%;
   transition-duration: 250ms;
   transition-property: all;
-}
 
-.header-button:hover {
+
+  &:hover {
   background-color: #5406b3;
   transform: scale(1.09, 1.09);
 }
-
-.header-item::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 35px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  z-index: 1;
-  background-color: #6a08e0;
-  transition-property: opacity;
-  transition-duration: 250ms;
-opacity: 0;
 }
 
+}
 
-.bottom-menu {
+.menu {
   position: absolute;
   top: 43px;
   left: -40px;
@@ -107,20 +119,18 @@ opacity: 0;
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
+
+
+
+  &__item {}
+
+
 }
 
 
 
-.header-item {
-  position: relative;
 
-}
 
-.header-item:hover .bottom-menu {
-  opacity: 1;
-}
 
-.header-item:hover::after {
 
-  opacity: 1;
-}
+
