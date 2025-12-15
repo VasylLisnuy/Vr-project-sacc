@@ -63,11 +63,11 @@
 
   &__page {
 
-    font-family: $font-family;
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: $color-scheme-1-text;
+    color: #5406b3;
     transition-property: color;
     transition-duration: 250ms;
 
@@ -79,33 +79,33 @@
   }
 
   &__button {
-  display: flex;
-  padding: 8px 20px;
-  justify-content: right;
-  align-items: right;
-  gap: 8px;
-  border-radius: 12px;
-  border-top: 1.5px solid $button-violet-Dark, #5406b3;
-  border-right: 1.5px solid $button-violet-Dark, #5406b3;
-  border-bottom: 4px solid $button-violet-Dark, #5406b3;
-  border-left: 1.5px solid $button-violet-Dark, #5406b3;
-  background: $button-Violet, #6a08e0;
-  color: $text-color, #ffffff;
-  margin-right: 64px;
+    display: flex;
+    padding: 8px 20px;
+    justify-content: right;
+    align-items: right;
+    gap: 8px;
+    border-radius: 12px;
+    border-top: 1.5px solid $button-violet-Dark, #5406b3;
+    border-right: 1.5px solid $button-violet-Dark, #5406b3;
+    border-bottom: 4px solid $button-violet-Dark, #5406b3;
+    border-left: 1.5px solid $button-violet-Dark, #5406b3;
+    background: $button-Violet, #6a08e0;
+    color: $text-color, #ffffff;
+    margin-right: 64px;
 
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  transition-duration: 250ms;
-  transition-property: all;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    transition-duration: 250ms;
+    transition-property: all;
 
 
-  &:hover {
-  background-color: #5406b3;
-  transform: scale(1.09, 1.09);
-}
-}
+    &:hover {
+      background-color: #5406b3;
+      transform: scale(1.09, 1.09);
+    }
+  }
 
 }
 
@@ -126,11 +126,3 @@
 
 
 }
-
-
-
-
-
-
-
-

@@ -8,7 +8,8 @@
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background-image: linear-gradient(270deg, ) rgba(106, 90, 205, 0.5 40%, ) rgba(78, 32, 124, 0.5 60%, ) url("./photo/image.webp");
+  
+  background-image: linear-gradient(270deg, rgba(106, 90, 205, 40%), rgba (78, 32, 124, 0.5)), url("./photo/image.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
