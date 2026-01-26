@@ -1,0 +1,124 @@
+.backdrop {
+    background-color: rgba(78, 32, 124, 0.5);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+
+    transition-property: opacity transform;
+    transition-duration: 250ms;
+
+
+    &.is-hidden {
+        opacity: 0;
+
+        pointer-events: none;
+
+        & .model {
+  transform: translate(-50%, -50%) scale(0);
+}
+    }
+
+    &__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
+&__form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 90px;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+
+  &__name {
+  background-color: rgba(109, 40, 236, 0.5);
+  width: 300px;
+  height: 55px;
+  padding-left: 7px;
+}
+
+&__number {
+  background-color: rgba(109, 40, 236, 0.3);
+  width: 300px;
+  height: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 7px;
+
+}
+
+&__button {
+  margin-top: 40px;
+  width: 200px;
+  height: 55px;
+  font-size: 18px;
+  font-style: normal;
+  background-color: #5406b3;
+  color: wheat;
+  box-shadow: #5406b3 2px 2px 50px 2px;
+  border-bottom: 4px solid var(--opacity-white-20);
+  border-left: 1.50px solid var(--opacity-white-20);
+  border-right: 1.50px solid var(--opacity-white-20);
+  border-top: 1.50px solid var(--opacity-white-20);
+  border-radius: 12px;
+
+&__:hover {
+  background-color: rgb(90, 11, 238, 0);
+}
+}
+
+}
+
+&__text {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+}
+
+.model {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(130, 90, 205);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 11px;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+
+  &__exit-icon {
+  width: 60px;
+  height: 60px;
+  fill: wheat;
+}
+}
+
+
+.top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: #6a08e0 solid;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
