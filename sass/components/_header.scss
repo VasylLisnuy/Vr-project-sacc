@@ -9,14 +9,14 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  background: #1f0243;
+  background: $section-background-color;
 
   &__info {
     display: flex;
   }
 
   &__list {
-    color: #ffffff;
+    color: $text-color;
     display: flex;
     align-items: center;
     gap: 32px;
@@ -44,7 +44,7 @@
       width: 100%;
       height: 2px;
       z-index: 1;
-      background-color: #6a08e0;
+      background-color:  $button-Violet;
       transition-property: opacity;
       transition-duration: 250ms;
       opacity: 0;
@@ -67,13 +67,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #5406b3;
+    color: $button-violet-Dark;
     transition-property: color;
     transition-duration: 250ms;
 
 
     &:hover {
-      color: #6a08e0;
+      color: $button-Violet;
     }
 
   }
@@ -85,12 +85,12 @@
     align-items: right;
     gap: 8px;
     border-radius: 12px;
-    border-top: 1.5px solid #5406b3;
-    border-right: 1.5px solid #5406b3;
-    border-bottom: 4px solid #5406b3;
-    border-left: 1.5px solid #5406b3;
-    background: #6a08e0;
-    color: #ffffff;
+    border-top: 1.5px solid $button-violet-Dark;
+    border-right: 1.5px solid $button-violet-Dark;
+    border-bottom: 4px solid $button-violet-Dark;
+    border-left: 1.5px solid $button-violet-Dark;
+    background: $button-Violet;
+    color: $text-color;
     margin-right: 64px;
 
     font-size: 18px;
@@ -102,7 +102,7 @@
 
 
     &:hover {
-      background-color: #5406b3;
+      background-color: $button-violet-Dark;
       transform: scale(1.09, 1.09);
     }
   }
@@ -114,8 +114,8 @@
   top: 43px;
   left: -40px;
   width: 150px;
-  background-color: #6a08e0;
-  border: #5406b3 solid;
+  background-color: $button-Violet;
+  border: $button-violet-Dark solid;
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;

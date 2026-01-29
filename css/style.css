@@ -1,3 +1,136 @@
+@keyframes scale-button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes puling-card {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(3deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.01);
+  }
+  75% {
+    transform: rotate(-3deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes puling-couples-card {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-3deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.01);
+  }
+  75% {
+    transform: rotate(3deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #49008d;
+  }
+  100% {
+    color: #8d01ff;
+  }
+}
+.reviews__name, .reviews__text, .galerry__text, .booking__p-text, .price__item-text, .price__text, .info__text, .game__text, .hero__text {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  /* background-color: transparent; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  max-width: 370px;
+}
+
 .container {
   outline: red solid;
   max-width: 1344px;
@@ -6,6 +139,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora";
 }
 
 .header {
@@ -137,13 +278,8 @@
 }
 .hero__text {
   max-width: 594px;
-  color: #ffffff;
   margin-top: 24px;
   margin-bottom: 32px;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .hero__button-div {
   display: flex;
@@ -219,7 +355,7 @@
 .game__title {
   width: 527px;
   flex-shrink: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   font-style: normal;
   font-weight: 700;
@@ -228,11 +364,6 @@
 }
 .game__text {
   flex: 1 0 0;
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .game__list {
   display: flex;
@@ -283,7 +414,7 @@
 .game__subtitle {
   align-self: stretch;
   margin-left: 16px;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -292,7 +423,7 @@
 .game__item-text {
   align-self: stretch;
   margin-left: 16px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -313,7 +444,7 @@
 }
 .info__title {
   align-self: stretch;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding-bottom: 16px;
   font-size: 48px;
@@ -324,13 +455,7 @@
 }
 .info__text {
   margin-bottom: 80px;
-  color: #fff;
   text-align: center;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .info__list {
   display: flex;
@@ -354,11 +479,11 @@
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #2a0359;
+  background: #1f0243;
 }
 .info__item-text {
   align-self: stretch;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -367,7 +492,7 @@
 }
 .info__subtitle {
   align-self: stretch;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 32px;
   font-style: normal;
@@ -387,7 +512,7 @@
   display: flex;
   top: 0;
   position: absolute;
-  border: #2a0359 solid 7px;
+  border: #1f0243 solid 7px;
   border-radius: 10px;
   opacity: 0;
   width: 416px;
@@ -401,7 +526,7 @@
   transition-duration: 250ms;
 }
 .overlay__link {
-  color: #FFF;
+  color: #ffffff;
   border: #5406b3 solid;
   border-radius: 5px;
   height: 40px;
@@ -437,13 +562,8 @@
 }
 .price__text {
   align-self: stretch;
-  color: #fff;
   text-align: center;
   padding-bottom: 80px;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .price__list {
   display: flex;
@@ -469,11 +589,7 @@
   background: #2a0359;
 }
 .price__item-text {
-  color: #fff;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .price__subtitle-h4 {
   align-self: stretch;
@@ -488,7 +604,7 @@
 }
 .price__subtitle-h3 {
   align-self: stretch;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding-bottom: 32px;
   font-size: 64px;
@@ -511,10 +627,10 @@
   font-weight: 600;
   line-height: 150%;
   border-radius: 12px;
-  border-top: 1.5px solid #5406b3;
-  border-right: 1.5px solid #5406b3;
-  border-bottom: 4px solid #5406b3;
-  border-left: 1.5px solid #5406b3;
+  border-top: 1.5px solid #6a08e0;
+  border-right: 1.5px solid #6a08e0;
+  border-bottom: 4px solid #6a08e0;
+  border-left: 1.5px solid #6a08e0;
   background: #6a08e0;
   transition-property: background-color transform;
   transition-duration: 250ms;
@@ -527,8 +643,7 @@
   width: 24px;
   height: 24px;
 }
-
-.text__and-check {
+.price__better {
   display: flex;
   gap: 16px;
 }
@@ -574,12 +689,7 @@
 }
 .booking__p-text {
   align-self: stretch;
-  color: #fff;
   font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .booking__l {
   color: #fff;
@@ -629,7 +739,7 @@
   border-radius: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: #ffffff;
 }
 .booking input::-moz-placeholder {
   color: #aaa;
@@ -642,7 +752,7 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 16px;
-  background: #1f0243, #1f0243;
+  background: #1f0243;
 }
 
 .name {
@@ -740,13 +850,8 @@
 }
 .galerry__text {
   align-self: stretch;
-  color: var(--text-color, #fff);
   text-align: center;
   font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 .galerry__list {
   display: flex;
@@ -780,10 +885,10 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: var(--section-background-color, #1f0243);
+  background: #1f0243;
 }
 .reviews__title {
-  color: var(--text-color, #fff);
+  color: #ffffff;
   text-align: center;
   margin-bottom: 24px;
   font-size: 54px;
@@ -793,7 +898,7 @@
   letter-spacing: -0.54px;
 }
 .reviews__subtitle {
-  color: var(--text-color, #fff);
+  color: #ffffff;
   text-align: center;
   margin-bottom: 80px;
   font-family: "Open Sans";
@@ -816,23 +921,11 @@
   gap: 24px;
   border-radius: 8px;
   border: var(--Stroke-Border-Width, 1px) solid var(--Color-Scheme-1-Border, rgba(255, 255, 255, 0.2));
-  background: var(--Color-Scheme-1-Foreground, #2a0359);
-}
-.reviews__text {
-  color: var(--text-color, #fff);
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+  background: #1f0243;
 }
 .reviews__name {
-  color: var(--text-color, #fff);
-  font-family: "Open Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 150%;
 }
 
 .stars {
@@ -857,7 +950,7 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: var(--section-background-color, #1f0243);
+  background: #1f0243;
 }
 .footer__logo {
   display: flex;
@@ -868,7 +961,7 @@
   align-items: center;
 }
 .footer__text {
-  color: var(--text-color, #fff);
+  color: #ffffff;
   margin-top: 32px;
   font-family: "Open Sans";
   font-size: 16px;
@@ -877,7 +970,7 @@
   line-height: 150%;
 }
 .footer__address {
-  color: var(--text-color, #fff);
+  color: #ffffff;
   margin-bottom: 24px;
   font-family: "Open Sans";
   font-size: 16px;
@@ -898,7 +991,7 @@
 .footer__link {
   display: flex;
   flex-direction: column;
-  color: var(--text-color, #fff);
+  color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
@@ -913,7 +1006,7 @@
 .footer__icon {
   width: 24px;
   height: 24px;
-  fill: white;
+  fill: #ffffff;
   transition-property: fill;
   transition-duration: 250ms;
 }
@@ -943,7 +1036,7 @@
   transform: scale(1.1);
 }
 .right__link {
-  color: #fff;
+  color: #ffffff;
   font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
@@ -957,7 +1050,7 @@
 }
 
 .prava {
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
   text-align: center;
 }
 .prava__text {

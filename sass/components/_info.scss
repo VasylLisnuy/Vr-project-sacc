@@ -5,14 +5,14 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: #1f0243;
+  background: $section-background-color;
   background-image: url(./photo/s.webp);
   background-repeat: no-repeat;
   background-position: right;
 
   &__title {
     align-self: stretch;
-    color: #fff;
+    color: $text-color;
     text-align: center;
 
     padding-bottom: 16px;
@@ -26,15 +26,8 @@
 
   &__text {
     margin-bottom: 80px;
-
-    color: #fff;
+    @extend %section-text;
     text-align: center;
-
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
   }
 
 
@@ -62,13 +55,13 @@
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #2a0359;
+    background: $section-background-color;
 
   }
 
   &__item-text {
     align-self: stretch;
-    color: #fff;
+    color: $text-color;
     text-align: center;
     font-size: 18px;
     font-style: normal;
@@ -78,7 +71,7 @@
 
   &__subtitle {
     align-self: stretch;
-    color: #fff;
+    color: $text-color;
     text-align: center;
 
     font-size: 32px;
@@ -105,7 +98,7 @@
   display: flex;
   top: 0;
   position: absolute;
-  border: #2a0359 solid 7px;
+  border: $section-background-color solid 7px;
   border-radius: 10px;
   opacity: 0;
   width: 416px;
@@ -118,8 +111,8 @@
   transition-duration: 250ms;
 
   &__link {
-    color: #FFF;
-    border: #5406b3 solid;
+    color: $text-color;
+    border: $button-violet-Dark solid;
     border-radius: 5px;
     height: 40px;
     width: 160px;

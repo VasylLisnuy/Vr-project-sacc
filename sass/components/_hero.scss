@@ -1,5 +1,5 @@
 .hero {
-  background: #1f0243;
+  background: $section-background-color;
   padding-top: 272.5px;
   padding-bottom: 272.5px;
   display: flex;
@@ -30,15 +30,9 @@
 
   &__text {
     max-width: 594px;
-
-    color: $text-color;
+    @extend %section-text ;
     margin-top: 24px;
     margin-bottom: 32px;
-
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
   }
 
 
@@ -56,11 +50,11 @@
     gap: 8px;
 
     border-radius: 12px;
-    border-top: 1.5px solid #5406b3;
-    border-right: 1.5px solid #5406b3;
-    border-bottom: 4px solid #5406b3;
-    border-left: 1.5px solid #5406b3;
-    background: #6a08e0;
+    border-top: 1.5px solid  $button-violet-Dark;
+    border-right: 1.5px solid  $button-violet-Dark;
+    border-bottom: 4px solid  $button-violet-Dark;
+    border-left: 1.5px solid  $button-violet-Dark;
+    background: $button-Violet;
 
     color: #FFF;
     font-family: "Open Sans";
@@ -73,7 +67,7 @@
     animation-iteration-count: infinite;
 
     &:hover {
-      background-color: #5406b3;
+      background-color:  $button-violet-Dark;
       transform: scale(1.1, 1.1);
     }
   }

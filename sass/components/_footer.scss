@@ -5,7 +5,7 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  background: var(--section-background-color, #1f0243);
+  background: $section-background-color;
 
 
   &__logo {
@@ -19,7 +19,7 @@
 
 
   &__text {
-    color: var(--text-color, #fff);
+    color: $text-color;
     margin-top: 32px;
 
     font-family: "Open Sans";
@@ -31,7 +31,7 @@
 
 
   &__address {
-    color: var(--text-color, #fff);
+    color: $text-color;
     margin-bottom: 24px;
 
     font-family: "Open Sans";
@@ -55,7 +55,7 @@
   &__link {
     display: flex;
     flex-direction: column;
-    color: var(--text-color, #fff);
+    color: $text-color;
 
 
     font-family: "Open Sans";
@@ -74,12 +74,12 @@
   &__icon {
     width: 24px;
     height: 24px;
-    fill: white;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
 
     &__:hover {
-      fill: #6a08e0;
+      fill: $button-Violet;
     }
 
   }
@@ -126,7 +126,7 @@
   }
 
   &__link {
-    color: #fff;
+    color: $text-color;
 
     font-family: "Open Sans";
     font-size: 18px;
@@ -137,7 +137,7 @@
     transition-duration: 250ms;
 
     &__:hover {
-      color: #6a08e0;
+      color: $button-Violet;
     }
   }
 }
@@ -145,7 +145,7 @@
 
 
 .prava {
-  border-top: 1px solid white;
+  border-top: 1px solid $text-color;
   text-align: center;
 
   &__text {

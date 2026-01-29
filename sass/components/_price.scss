@@ -20,14 +20,9 @@
 
   &__text {
     align-self: stretch;
-    color: #fff;
     text-align: center;
     padding-bottom: 80px;
-
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    @extend %section-text;
   }
 
 
@@ -60,11 +55,9 @@
   }
 
   &__item-text {
-    color: #fff;
+    @extend %section-text;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+
   }
 
   &__subtitle-h4 {
@@ -82,7 +75,7 @@
 
   &__subtitle-h3 {
     align-self: stretch;
-    color: #fff;
+    color: $text-color;
     text-align: center;
     padding-bottom: 32px;
 
@@ -101,7 +94,7 @@
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    color: #ffffff;
+    color: $text-color;
 
     font-family: "Open Sans";
     font-size: 18px;
@@ -109,24 +102,20 @@
     font-weight: 600;
     line-height: 150%;
     border-radius: 12px;
-    border-top: 1.5px solid #5406b3;
-    border-right: 1.5px solid #5406b3;
-    border-bottom: 4px solid #5406b3;
-    border-left: 1.5px solid #5406b3;
-    background: #6a08e0;
+    border-top: 1.5px solid $button-Violet;
+    border-right: 1.5px solid $button-Violet;
+    border-bottom: 4px solid $button-Violet;
+    border-left: 1.5px solid $button-Violet;
+    background: $button-Violet;
     transition-property: background-color transform;
     transition-duration: 250ms;
 
-
-
     &:hover {
-      background-color: #5406b3;
+      background-color: $button-violet-Dark;
       transform: scale(1.1) translate(0px, -4px);
-
-
-
-
+  
     }
+
   }
 
 
@@ -135,12 +124,9 @@
     height: 24px;
   }
 
-}
-
-
-
-.text__and-check {
+  &__better {
   display: flex;
   gap: 16px;
-
 }
+}
+

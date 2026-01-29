@@ -7,10 +7,10 @@
     gap: 80px;
     align-self: stretch;
 
-    background: var(--section-background-color, #1f0243);
+    background: $section-background-color;
 
     &__title {
-        color: var(--text-color, #fff);
+        color: $text-color;
         text-align: center;
         margin-bottom: 24px;
 
@@ -22,7 +22,7 @@
     }
 
     &__subtitle {
-        color: var(--text-color, #fff);
+        color: $text-color;
         text-align: center;
         margin-bottom: 80px;
 
@@ -48,27 +48,18 @@
         gap: 24px;
         border-radius: 8px;
         border: var(--Stroke-Border-Width, 1px) solid var(--Color-Scheme-1-Border, rgba(255, 255, 255, 0.2));
-        background: var(--Color-Scheme-1-Foreground, #2a0359);
+        background: $section-background-color;
     }
 
     &__text {
-        color: var(--text-color, #fff);
-
-        font-family: "Open Sans";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
+       @extend %section-text;
     }
 
     &__name {
-        color: var(--text-color, #fff);
-
-        font-family: "Open Sans";
+        @extend %section-text;
         font-size: 18px;
-        font-style: normal;
         font-weight: 600;
-        line-height: 150%;
+
     }
 
 
