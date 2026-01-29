@@ -313,7 +313,7 @@
 }
 .info__title {
   align-self: stretch;
-  color: #ffffff, #fff;
+  color: #fff;
   text-align: center;
   padding-bottom: 16px;
   font-size: 48px;
@@ -324,7 +324,7 @@
 }
 .info__text {
   margin-bottom: 80px;
-  color: #ffffff, #fff;
+  color: #fff;
   text-align: center;
   font-family: "Open Sans";
   font-size: 20px;
@@ -356,9 +356,9 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #2a0359;
 }
-.info__item__item-text {
+.info__item-text {
   align-self: stretch;
-  color: #ffffff, #fff;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -691,6 +691,31 @@
   line-height: 150%;
 }
 
+.button__sand-contact {
+  border-bottom: 4px solid var(--color-electric-violet-dark);
+  border-left: 1.5px solid var(--color-electric-violet-dark);
+  border-right: 1.5px solid var(--color-electric-violet-dark);
+  border-top: 1.5px solid var(--color-electric-violet-dark);
+  border-radius: 12px;
+  padding: 10px 24px;
+  width: 173px;
+  height: 47px;
+  background: #6a08e0;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.radio__item {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
 .galerry {
   padding-top: 112px;
   padding-bottom: 112px;
@@ -936,8 +961,8 @@
   text-align: center;
 }
 .prava__text {
-  margin-top: 32px;
-  color: var(--text-color, #fff);
+  margin-top: 42px;
+  color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;

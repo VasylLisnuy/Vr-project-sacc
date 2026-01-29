@@ -210,3 +210,30 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+.button__sand-contact {
+  border-bottom: 4px solid var(--color-electric-violet-dark);
+  border-left: 1.50px solid var(--color-electric-violet-dark);
+  border-right: 1.50px solid var(--color-electric-violet-dark);
+  border-top: 1.50px solid var(--color-electric-violet-dark);
+  border-radius: 12px;
+  padding: 10px 24px;
+  width: 173px;
+  height: 47px;
+  background: $button-Violet;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: $text-color ;
+}
+
+.radio__item {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text-color;
+
+}

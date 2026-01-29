@@ -9,85 +9,85 @@
 
 
   &__logo {
-  display: flex;
-  width: 84px;
-  height: 36px;
-  padding: 6.844px 0px 5.695px 0px;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    width: 84px;
+    height: 36px;
+    padding: 6.844px 0px 5.695px 0px;
+    justify-content: center;
+    align-items: center;
+  }
 
 
-&__text {
-  color: var(--text-color, #fff);
-  margin-top: 32px;
+  &__text {
+    color: var(--text-color, #fff);
+    margin-top: 32px;
 
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-
-
-&__address {
-  color: var(--text-color, #fff);
-  margin-bottom: 24px;
-
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
-
-  &__:hover {
-animation: colorChange 3s linear infinite;
-}
-
-}
-
-&__link {
-  display: flex;
-  flex-direction: column;
-  color: var(--text-color, #fff);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
 
 
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
+  &__address {
+    color: var(--text-color, #fff);
+    margin-bottom: 24px;
 
-&__sublist {
-  margin-top: 32px;
-  display: flex;
-  gap: 12px;
-}
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 
-&__icon {
-  width: 24px;
-  height: 24px;
-  fill: white;
-  transition-property: fill;
-  transition-duration: 250ms;
+    &__:hover {
+      animation: colorChange 3s linear infinite;
+    }
 
-&__:hover {
-  fill: #6a08e0;
-}
+  }
 
-}
+  &__link {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color, #fff);
 
 
-&__box {
-  display: flex;
-}
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__sublist {
+    margin-top: 32px;
+    display: flex;
+    gap: 12px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition-property: fill;
+    transition-duration: 250ms;
+
+    &__:hover {
+      fill: #6a08e0;
+    }
+
+  }
+
+
+  &__box {
+    display: flex;
+  }
 
 
 
@@ -105,60 +105,56 @@ animation: colorChange 3s linear infinite;
   margin-left: auto;
 
   &__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
 
 
   }
 
   &__item {
-  gap: 16px;
- transition-property: transform ;
-  transition-duration: 250ms;
+    gap: 16px;
+    transition-property: transform;
+    transition-duration: 250ms;
 
-  &__:hover {
-  transform: scale(1.1);
-}
+    &__:hover {
+      transform: scale(1.1);
+    }
 
-}
+  }
 
-&__link {
-  color: #fff;
+  &__link {
+    color: #fff;
 
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-   transition-property: color ;
-  transition-duration: 250ms;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    transition-property: color;
+    transition-duration: 250ms;
 
-  &__:hover {
-  color: #6a08e0;
-}
-}
+    &__:hover {
+      color: #6a08e0;
+    }
+  }
 }
 
 
 
 .prava {
   border-top: 1px solid white;
-
   text-align: center;
 
   &__text {
-  margin-top: 32px;
-  color: var(--text-color, #fff);
-
-
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+    margin-top: 42px;
+    color: $text-color;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
-}
-
