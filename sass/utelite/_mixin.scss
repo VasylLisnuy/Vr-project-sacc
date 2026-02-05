@@ -1,0 +1,23 @@
+@mixin section_title($font-size: 54px, $letter-spacing: -0.54px, $text-align: left) {
+    color: $text-color;
+        font-weight: 700;
+        line-height: 100%;
+        font-size: $font-size;
+        letter-spacing: $letter-spacing;
+        text-align: $text-align;
+}
+
+@mixin button($padding: 10px 24px, $justify-content: center, $align-items: center, $gap: 8px, $background: $button-Violet){
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 12px;
+    padding: $padding;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+    background: $button-Violet;
+    color: $text-color;
+    font-family: "Open Sans";
+}

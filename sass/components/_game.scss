@@ -14,15 +14,9 @@
   }
 
   &__title {
+    @include section_title;
     width: 527px;
     flex-shrink: 0;
-    color: $text-color;
-
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.54px;
   }
 
 

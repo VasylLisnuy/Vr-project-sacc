@@ -11,17 +11,9 @@
   background-position: right;
 
   &__title {
+    @include section_title($font-size: 48px, $letter-spacing: -0.48px, $text-align: center);
     align-self: stretch;
-    color: $text-color;
-    text-align: center;
-
     padding-bottom: 16px;
-
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.48px;
   }
 
   &__text {

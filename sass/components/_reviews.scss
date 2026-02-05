@@ -10,15 +10,8 @@
     background: $section-background-color;
 
     &__title {
-        color: $text-color;
-        text-align: center;
+        @include section_title($text-align: center);
         margin-bottom: 24px;
-
-        font-size: 54px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 100%;
-        letter-spacing: -0.54px;
     }
 
     &__subtitle {
@@ -41,6 +34,7 @@
 
     &__item {
         display: flex;
+        flex-basis: calc((100% - 24px) / 2 );
         max-width: 640px;
         padding: 32px;
         flex-direction: column;
@@ -52,7 +46,7 @@
     }
 
     &__text {
-       @extend %section-text;
+        @extend %section-text;
     }
 
     &__name {

@@ -34,14 +34,8 @@
 
 
   &__title {
+    @include section_title;
     align-self: stretch;
-    color: $text-color;
-
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.54px;
     margin-top: 16px;
     margin-bottom: 24px;
   }
@@ -100,7 +94,7 @@
 
 
       &:hover {
-        background-color: $button-violet-Dark3;
+        background-color: $button-violet-Dark;
         transform: scale(1.1);
       }
     }
@@ -190,21 +184,13 @@
 }
 
 .button__sand-contact {
+  @include button;
   border-bottom: 4px solid $button-violet-Dark;
   border-left: 1.50px solid $button-violet-Dark;
   border-right: 1.50px solid $button-violet-Dark;
   border-top: 1.50px solid $button-violet-Dark;
-  border-radius: 12px;
-  padding: 10px 24px;
   width: 173px;
   height: 47px;
-  background: $button-Violet;
-
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
-  color: $text-color ;
 }
 
 .radio__item {

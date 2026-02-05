@@ -15,15 +15,8 @@
 
 
   &__title {
+    @include section_title($text-align: center);
     width: 675px;
-    color: var(--text-color, #fff);
-    text-align: center;
-
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.54px;
   }
 
 

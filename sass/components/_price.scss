@@ -4,17 +4,9 @@
   background: #1f0243;
 
   &__title {
+    @include section_title ($text-align: center);
     align-self: stretch;
-
     margin-bottom: 24px;
-    color: #fff;
-    text-align: center;
-
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.54px;
   }
 
 
@@ -88,20 +80,8 @@
 
 
   &__button {
-    display: flex;
-    padding: 10px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+    @include button;
     align-self: stretch;
-    color: $text-color;
-
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    border-radius: 12px;
     border-top: 1.5px solid $button-Violet;
     border-right: 1.5px solid $button-Violet;
     border-bottom: 4px solid $button-Violet;

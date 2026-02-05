@@ -67,7 +67,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: $button-violet-Dark;
+    color: $text-color;
     transition-property: color;
     transition-duration: 250ms;
 
@@ -79,24 +79,12 @@
   }
 
   &__button {
-    display: flex;
-    padding: 8px 20px;
-    justify-content: right;
-    align-items: right;
-    gap: 8px;
-    border-radius: 12px;
+    @include button($padding: 8px 20px, $justify-content: right);
     border-top: 1.5px solid $button-violet-Dark;
     border-right: 1.5px solid $button-violet-Dark;
     border-bottom: 4px solid $button-violet-Dark;
     border-left: 1.5px solid $button-violet-Dark;
-    background: $button-Violet;
-    color: $text-color;
     margin-right: 64px;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
     transition-duration: 250ms;
     transition-property: all;
 
@@ -119,10 +107,5 @@
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
-
-
-
-  &__item {}
-
 
 }
