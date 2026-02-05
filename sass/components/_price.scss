@@ -19,9 +19,8 @@
 
 
   &__list {
-    display: flex;
+  @include section-list();
     align-items: flex-start;
-    gap: 32px;
     align-self: stretch;
   }
 

@@ -21,3 +21,9 @@
     color: $text-color;
     font-family: "Open Sans";
 }
+
+@mixin section-list($flex-wrap: nowrap, $gap: 32px ) {
+    display: flex;
+    gap: $gap;
+    flex-wrap: $flex-wrap;
+}

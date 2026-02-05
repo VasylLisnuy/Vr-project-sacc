@@ -34,7 +34,7 @@
 
 
   &__title {
-    @include section_title;
+    @include section_title();
     align-self: stretch;
     margin-top: 16px;
     margin-bottom: 24px;
@@ -170,9 +170,9 @@
 
 
 .radio-list {
-  display: flex;
+  @include section-list($gap: 8px);
   align-items: center;
-  gap: 8px;
+ 
   color: $text-color;
   flex-direction: column;
 

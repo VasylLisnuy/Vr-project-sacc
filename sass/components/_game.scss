@@ -14,7 +14,7 @@
   }
 
   &__title {
-    @include section_title;
+    @include section_title();
     width: 527px;
     flex-shrink: 0;
   }
@@ -27,11 +27,11 @@
 
 
   &__list {
-    display: flex;
+
     height: 350px;
     align-items: flex-start;
-    gap: 32px;
     align-self: stretch;
+    @include section-list();
   }
 
   &__item {

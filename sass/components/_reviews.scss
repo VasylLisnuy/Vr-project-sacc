@@ -27,9 +27,8 @@
     }
 
     &__list {
-        display: flex;
-        gap: 32px;
-        flex-wrap: wrap;
+        @include section-list($flex-wrap: wrap);
+        
     }
 
     &__item {

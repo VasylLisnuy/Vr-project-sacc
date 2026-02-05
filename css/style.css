@@ -165,10 +165,11 @@ body {
   display: flex;
 }
 .header__list {
-  color: #ffffff;
   display: flex;
-  align-items: center;
   gap: 32px;
+  flex-wrap: nowrap;
+  color: #ffffff;
+  align-items: center;
   margin-right: auto;
 }
 .header__item {
@@ -365,11 +366,12 @@ body {
   flex: 1 0 0;
 }
 .game__list {
-  display: flex;
   height: 350px;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
 }
 .game__item {
   display: flex;
@@ -457,12 +459,12 @@ body {
 }
 .info__list {
   display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 32px;
   align-self: stretch;
-  flex-wrap: wrap;
 }
 .info__item {
   position: relative;
@@ -564,8 +566,9 @@ body {
 }
 .price__list {
   display: flex;
-  align-items: flex-start;
   gap: 32px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   align-self: stretch;
 }
 .price__box {
@@ -787,8 +790,9 @@ body {
 
 .radio-list {
   display: flex;
-  align-items: center;
   gap: 8px;
+  flex-wrap: nowrap;
+  align-items: center;
   color: #ffffff;
   flex-direction: column;
   font-family: "Open Sans";
@@ -854,19 +858,11 @@ body {
   font-family: "Open Sans";
 }
 .galerry__list {
-  display: flex;
   flex-direction: column;
-  gap: 32px;
   max-height: 624px;
-  flex-wrap: wrap;
-}
-.galerry .big {
-  max-width: 624px;
-  transition-property: transform;
-  transition-duration: 250ms;
-}
-.galerry .big:hover {
-  transform: scale(1.05);
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
 }
 .galerry__item {
   width: 296px;
@@ -876,6 +872,15 @@ body {
 }
 .galerry__item__item:hover {
   transform: scale(1.1);
+}
+
+.big {
+  max-width: 624px;
+  transition-property: transform;
+  transition-duration: 250ms;
+}
+.big:hover {
+  transform: scale(1.05);
 }
 
 .reviews {
@@ -1022,10 +1027,11 @@ body {
 }
 .right__list {
   display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 16px;
 }
 .right__item {
   gap: 16px;
