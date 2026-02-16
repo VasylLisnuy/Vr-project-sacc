@@ -7,9 +7,9 @@
         text-align: $text-align;
 }
 
-@mixin button($padding: 10px 24px, $justify-content: center, $align-items: center, $gap: 8px, $background: $button-Violet){
-    display: flex;
-    font-size: 18px;
+@mixin button($padding: 10px 24px, $justify-content: center, $align-items: center, $gap: 8px, $background: $button-Violet, $font-size: 18px, $display: flex){
+    display: $display;
+    font-size: $font-size;
     font-weight: 600;
     line-height: 150%;
     border-radius: 12px;

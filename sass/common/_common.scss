@@ -1,11 +1,39 @@
 .container {
   max-width: 1344px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  outline: red solid;
+
+
+  @media screen and (min-width: 351px) {
+    width: 351px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+  }
+
+
+  @media screen and (min-width: 728px) {
+    width: 728px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+  }
+
+
+  @media screen and (min-width: 1344px) {
+    width: 1344px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -14,5 +42,3 @@ html {
 body {
   font-family: "Sora";
 }
-
-

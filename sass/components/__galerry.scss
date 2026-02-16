@@ -28,7 +28,7 @@
   }
 
   &__list {
-
+   
     flex-direction: column;
     max-height: 624px;
     @include section-list();
@@ -42,6 +42,8 @@
     transition-property: transform;
     transition-duration: 250ms;
 
+
+    
     &__item:hover {
       transform: scale(1.1);
     }
