@@ -1,127 +1,228 @@
 .game {
   background: $section-background-color;
   display: flex;
-  padding: 112px 64px;
+  padding: 64px 0px;
   flex-direction: column;
   align-items: center;
   gap: 80px;
   align-self: stretch;
 
+
+  @media screen and (min-width: 728px) {}
+
+
+  @media screen and (min-width: 1344px) {
+
+    padding: 112px 0px;
+  }
+
   &__dive {
     display: flex;
-    padding-bottom: 56px;
-    gap: 32px;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 56px;
+
+    @media screen and (min-width: 728px) {}
+
+
+    @media screen and (min-width: 1344px) {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+
+    }
+
+
   }
 
   &__title {
-    @include section_title();
-    width: 527px;
-    flex-shrink: 0;
+
+    width: 335px;
+    align-self: stretch;
+    color: $text-color;
+    font-family: Sora;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+
+
+
+    @media screen and (min-width: 728px) {
+      width: 680.0px;
+      font-size: 44px;
+      letter-spacing: -0.44px;
+
+
+    }
+
+
+    @media screen and (min-width: 1344px) {
+      width: 527.0px;
+      font-size: 54px;
+      letter-spacing: -0.54px;
+
+
+    }
   }
 
 
   &__text {
-    flex: 1 0 0;
-    @extend %section-text
+    width: 335.0px;
+    align-self: stretch;
+    color: $text-color;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+
+
+    @media screen and (min-width: 728px) {
+      width: 704.0px;
+
+    }
+
+
+    @media screen and (min-width: 1344px) {
+      width: 752.0px;
+      font-size: 20px;
+
+    }
   }
 
 
   &__list {
 
-    height: 350px;
-    align-items: flex-start;
-    align-self: stretch;
-    @include section-list();
+
+    justify-content: center;
+    // align-self: stretch;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+
+
+
+    @media screen and (min-width: 1344px) {}
+
+    gap: 32px;
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    flex: 1 0 0;
-    align-self: stretch;
+
+
+    // flex: 1 0 0;
+    flex-basis: 100%;
+
 
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.2);
     background: #2a0359;
     transition-property: transform;
     transition-duration: 250ms;
 
 
-    &__item:nth-child(2) {
-      animation-name: puling-couples-card;
-      animation-duration: 2500ms;
-      animation-iteration-count: infitie;
+    @media screen and (min-width: 728px) {
 
-
+      flex-basis: calc((100% - 32px) / 2);
 
     }
 
 
-    &__item:nth-child(1) {
-      animation-name: puling-card;
-      animation-duration: 2500ms;
-      animation-iteration-count: infitie;
-
-
-
+    @media screen and (min-width: 1344px) {
+      flex-basis: calc((100% - 128px) / 5);
     }
 
 
-
-    &__item:nth-child(3) {
-      animation-name: puling-card;
-      animation-duration: 2500ms;
-      animation-iteration-count: infitie;
-
-
-
-    }
-
-    &__item:nth-child(4) {
-      animation-name: puling-couples-card;
-      animation-duration: 2500ms;
-      animation-iteration-count: infitie;
+    // &__item:nth-child(2) {
+    //   animation-name: puling-couples-card;
+    //   animation-duration: 2500ms;
+    //   animation-iteration-count: infitie;
 
 
 
-
-    }
-
-    &__item:nth-child(5) {
-      animation-name: puling-card;
-      animation-duration: 2500ms;
-      animation-iteration-count: infitie;
+    // }
 
 
+    // &__item:nth-child(1) {
+    //   animation-name: puling-card;
+    //   animation-duration: 2500ms;
+    //   animation-iteration-count: infitie;
 
-    }
+
+
+    // }
+
+
+
+    // &__item:nth-child(3) {
+    //   animation-name: puling-card;
+    //   animation-duration: 2500ms;
+    //   animation-iteration-count: infitie;
+
+
+
+    // }
+
+    // &__item:nth-child(4) {
+    //   animation-name: puling-couples-card;
+    //   animation-duration: 2500ms;
+    //   animation-iteration-count: infitie;
+
+
+
+
+    // }
+
+    // &__item:nth-child(5) {
+    //   animation-name: puling-card;
+    //   animation-duration: 2500ms;
+    //   animation-iteration-count: infitie;
+
+
+
+    // }
 
   }
 
 
   &__subtitle {
     align-self: stretch;
-    margin-left: 16px;
     color: $text-color;
-
-    font-size: 20px;
-    font-style: normal;
+    font-family: "Open Sans";
+    font-size: 16px;
     font-weight: 600;
     line-height: 150%;
+
+
+
+
+    @media screen and (min-width: 728px) {}
+
+
+    @media screen and (min-width: 1344px) {
+      font-size: 20px;
+
+
+    }
   }
 
   &__item-text {
     align-self: stretch;
-    margin-left: 16px;
     color: $text-color;
 
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+  }
+
+
+  &__box {
+    padding: 16px 16px 28px 16px;
+
+
   }
 
 }

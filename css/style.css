@@ -54,7 +54,7 @@
     color: #8d01ff;
   }
 }
-.reviews__name, .reviews__text, .galerry__text, .booking__p-text, .price__item-text, .price__text, .info__text, .game__text, .hero__text {
+.reviews__name, .reviews__text, .galerry__text, .booking__p-text, .price__item-text, .price__text, .hero__text {
   font-size: 20px;
   color: #ffffff;
   font-weight: 400;
@@ -125,10 +125,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-li {
-  max-width: 370px;
 }
 
 .container {
@@ -353,7 +349,7 @@ body {
 }
 @media screen and (min-width: 728px) {
   .hero {
-    padding-top: 79px;
+    padding-top: 143px;
     padding-bottom: 79px;
   }
 }
@@ -368,7 +364,7 @@ body {
   font-weight: 700;
   line-height: 100%;
   font-size: 36px;
-  letter-spacing: -0.64px;
+  letter-spacing: -0.36px;
   text-align: left;
   align-self: stretch;
   max-width: 335px;
@@ -381,7 +377,17 @@ body {
     font-size: 48px;
     letter-spacing: -0.64px;
     text-align: left;
-    max-width: 704px;
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .hero__title {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 36px;
+    letter-spacing: -0.64px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -412,7 +418,18 @@ body {
 }
 .hero__button-div {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  flex-direction: column;
+}
+@media screen and (min-width: 728px) {
+  .hero__button-div {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .hero__button-div {
+    gap: 16px;
+  }
 }
 .hero__button {
   display: flex;
@@ -469,145 +486,213 @@ body {
 .game {
   background: #1f0243;
   display: flex;
-  padding: 112px 64px;
+  padding: 64px 0px;
   flex-direction: column;
   align-items: center;
   gap: 80px;
   align-self: stretch;
 }
+@media screen and (min-width: 1344px) {
+  .game {
+    padding: 112px 0px;
+  }
+}
 .game__dive {
   display: flex;
-  padding-bottom: 56px;
-  gap: 32px;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+@media screen and (min-width: 1344px) {
+  .game__dive {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 .game__title {
+  width: 335px;
+  align-self: stretch;
   color: #ffffff;
+  font-family: Sora;
+  font-size: 32px;
+  font-style: normal;
   font-weight: 700;
   line-height: 100%;
-  font-size: 54px;
-  letter-spacing: -0.54px;
-  text-align: left;
-  width: 527px;
-  flex-shrink: 0;
+  letter-spacing: -0.32px;
+}
+@media screen and (min-width: 728px) {
+  .game__title {
+    width: 680px;
+    font-size: 44px;
+    letter-spacing: -0.44px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .game__title {
+    width: 527px;
+    font-size: 54px;
+    letter-spacing: -0.54px;
+  }
 }
 .game__text {
-  flex: 1 0 0;
+  width: 335px;
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (min-width: 728px) {
+  .game__text {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .game__text {
+    width: 752px;
+    font-size: 20px;
+  }
 }
 .game__list {
-  height: 350px;
-  align-items: flex-start;
-  align-self: stretch;
+  justify-content: center;
   display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.game__list {
   gap: 32px;
-  flex-wrap: nowrap;
 }
 .game__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-  flex: 1 0 0;
-  align-self: stretch;
+  flex-basis: 100%;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
   background: #2a0359;
   transition-property: transform;
   transition-duration: 250ms;
 }
-.game__item__item:nth-child(2) {
-  animation-name: puling-couples-card;
-  animation-duration: 2500ms;
-  animation-iteration-count: infitie;
+@media screen and (min-width: 728px) {
+  .game__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
 }
-.game__item__item:nth-child(1) {
-  animation-name: puling-card;
-  animation-duration: 2500ms;
-  animation-iteration-count: infitie;
-}
-.game__item__item:nth-child(3) {
-  animation-name: puling-card;
-  animation-duration: 2500ms;
-  animation-iteration-count: infitie;
-}
-.game__item__item:nth-child(4) {
-  animation-name: puling-couples-card;
-  animation-duration: 2500ms;
-  animation-iteration-count: infitie;
-}
-.game__item__item:nth-child(5) {
-  animation-name: puling-card;
-  animation-duration: 2500ms;
-  animation-iteration-count: infitie;
+@media screen and (min-width: 1344px) {
+  .game__item {
+    flex-basis: calc((100% - 128px) / 5);
+  }
 }
 .game__subtitle {
   align-self: stretch;
-  margin-left: 16px;
   color: #ffffff;
-  font-size: 20px;
-  font-style: normal;
+  font-family: "Open Sans";
+  font-size: 16px;
   font-weight: 600;
   line-height: 150%;
 }
+@media screen and (min-width: 1344px) {
+  .game__subtitle {
+    font-size: 20px;
+  }
+}
 .game__item-text {
   align-self: stretch;
-  margin-left: 16px;
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
+.game__box {
+  padding: 16px 16px 28px 16px;
+}
 
 .info {
   display: flex;
-  padding: 112px 64px;
+  padding: 64px 0px;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
-  align-self: stretch;
+  gap: 32px;
   background: #1f0243;
   background-image: url(./photo/s.webp);
   background-repeat: no-repeat;
   background-position: right;
 }
+@media screen and (min-width: 1344px) {
+  .info {
+    padding: 112px 0px;
+    gap: 80px;
+  }
+}
 .info__title {
+  width: 90%;
+  align-self: stretch;
   color: #ffffff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 28px;
   font-weight: 700;
   line-height: 100%;
-  font-size: 48px;
-  letter-spacing: -0.48px;
-  text-align: center;
-  align-self: stretch;
-  padding-bottom: 16px;
+  letter-spacing: -0.28px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 728px) {
+  .info__title {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .info__title {
+    font-size: 48px;
+    letter-spacing: -0.48px;
+  }
 }
 .info__text {
-  margin-bottom: 80px;
+  margin-bottom: 32px;
+  color: #ffffff;
   text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (min-width: 1344px) {
+  .info__text {
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
 }
 .info__list {
   display: flex;
-  gap: 32px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  align-self: stretch;
+  gap: 32px;
 }
 .info__item {
   position: relative;
   display: flex;
-  height: 289px;
-  min-width: 416px;
+  width: 100%;
+  flex-basis: 100%;
   padding: 32px;
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  flex: 1 0 0;
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #1f0243;
+}
+@media screen and (min-width: 728px) {
+  .info__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1344px) {
+  .info__item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
 }
 .info__item-text {
   align-self: stretch;
